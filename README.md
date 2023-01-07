@@ -10,7 +10,6 @@
       <ul>
         <li><a href="#introduction">Introduction</a></li>
         <li><a href="#features">Features</a></li>
-        <li><a href="#built-with">Built With</a></li>
       </ul>
     </li>
     <li>
@@ -20,8 +19,13 @@
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
+    <li>
+      <a href="endpoints">Getting Started</a>
+      <ul>
+        <li><a href="#users">Prerequisites</a></li>
+        <li><a href="#actions">Installation</a></li>
+      </ul>
+    </li>
     <li><a href="#contact">Contact</a></li>
   </ol>
 </details>
@@ -213,6 +217,7 @@ curl -X DELETE \
   http://localhost:PORT_NUMBER/tweets/TWEET_ID \
   -H 'Authorization: Bearer YOUR_JWT_TOKEN'
 ```
+<br/>
 
 ## Contact
 
