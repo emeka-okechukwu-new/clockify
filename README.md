@@ -115,6 +115,7 @@ curl -X POST \
   "password": "PASSWORD"
 }'
 ```
+<br/>
 
 #### Login User
 
@@ -162,6 +163,7 @@ curl -X POST \
   "content": "This is my first tweet"
 }'
 ```
+<br/>
 
 #### Read a Tweet
 
@@ -173,6 +175,7 @@ curl -X GET \
   http://localhost:PORT_NUMBER/tweets \
   -H 'Authorization: Bearer YOUR_JWT_TOKEN'
 ```
+<br/>
 
 #### Update a Tweet
 
@@ -193,6 +196,7 @@ curl -X PATCH \
   "content": "Updated Content"
 }'
 ```
+<br/>
 
 #### Delete a Tweet
 
