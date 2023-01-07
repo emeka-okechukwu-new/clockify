@@ -170,7 +170,7 @@ GET /tweets: Returns all tweets for the authenticated user.
 Use cURL to send a request to get all tweets with the following command:
 ```sh
 curl -X GET \
-  http://localhost:PORT_NUMBER0/tweets \
+  http://localhost:PORT_NUMBER/tweets \
   -H 'Authorization: Bearer YOUR_JWT_TOKEN'
 ```
 
@@ -186,7 +186,7 @@ Use cURL to send a request to update a tweet with the following command:
 
 ```sh
 curl -X PATCH \
-  http://localhost:PORT_NUMBER0/tweets/TWEET_ID \
+  http://localhost:PORT_NUMBER/tweets/TWEET_ID \
   -H 'Content-Type: application/json' \
   -H 'Authorization: Bearer YOUR_JWT_TOKEN' \
   -d '{
@@ -207,7 +207,7 @@ Use cURL to send a request to delete a tweet with the following command:
 
 ```sh
 curl -X DELETE \
-  http://localhost:PORT_NUMBER0/tweets/TWEET_ID \
+  http://localhost:PORT_NUMBER/tweets/TWEET_ID \
   -H 'Authorization: Bearer YOUR_JWT_TOKEN'
 ```
 
