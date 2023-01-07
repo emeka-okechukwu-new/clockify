@@ -41,7 +41,7 @@ This is a simple RestAPI built with Node.js, Express, and MongoDB. It exposes en
 - [x] Read tweet
 - [x] Update tweet
 - [x] Delete tweet
-- [ ] Unit tests with Jest for the functionality (functionality tested with Postman)
+- [ ] Unit tests with Jest for the functionality (functionality tested with cURL)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -89,7 +89,7 @@ npm start
 
 ## Endpoints
 
-The base URL for the API is http://localhost:{YOUR PORT NUMBER}/
+The base URL for the API is localhost:{YOUR PORT NUMBER}/
 
 cURL on terminal is recommended for testing these endpoints but Postman can be used too
 
