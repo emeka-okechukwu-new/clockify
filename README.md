@@ -217,7 +217,7 @@ curl -X DELETE \
   http://localhost:PORT_NUMBER/tweets/TWEET_ID \
   -H 'Authorization: Bearer YOUR_JWT_TOKEN'
 ```
-<br/>
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Contact
 
