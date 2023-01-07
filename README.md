@@ -59,7 +59,7 @@ This is a simple RestAPI built with Node.js, Express, and MongoDB. It exposes en
 1. Clone the repo inside XAMPP htdocs folder. Make sure the project folder name is `research-hub`
 
 ```sh
-git clone https://github.com/emeka-okechukwu-dev/
+git clone https://github.com/emeka-okechukwu-dev/task-one.git
 ```
 
 2. Install the dependencies
