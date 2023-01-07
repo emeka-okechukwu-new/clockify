@@ -34,14 +34,14 @@
 
 ### Introduction
 
-This is a simple RestAPI built with Node.js, Express, and MongoDB. It exposes endpoints for users to create, read, update, and delete tweet. It also allows users to register and login.
+This is a simple RestAPI built with Node.js, Express, and MongoDB. It exposes endpoints for users to add to and view their balance. It also allows users to register and log in.
 
 ### Features
 
 - [x] User registration using unique username and a password
 - [x] User login (including session maintenance using JWT)
 - [x] Only logged-in users can perform CRUD functionality
-- [x] Users can logout
+- [x] Users can log out
 - [x] View balance
 - [x] Add to balance
 - [ ] Unit tests with Jest for the functionality (functionality tested with cURL)
@@ -59,7 +59,7 @@ This is a simple RestAPI built with Node.js, Express, and MongoDB. It exposes en
 
 ### Installation
 
-1. Clone the repo inside XAMPP htdocs folder. Make sure the project folder name is `task-one`
+1. Clone the repository
 
 ```sh
 git clone https://github.com/emeka-okechukwu-dev/speer-technologies-assessmemt/task-two.git
@@ -94,7 +94,7 @@ npm start
 
 The base URL for the API is localhost:{YOUR PORT NUMBER}/
 
-cURL on terminal is recommended for testing these endpoints but Postman can be used too
+cURL in terminal is recommended for testing these endpoints but Postman can be used too
 
 ### Users
 
@@ -141,7 +141,7 @@ curl -X POST \
 }'
 ```
 
-⚠️ Copy the token generated when you login successfully and replace with `YOUR_JWT_TOKEN` below.
+⚠️ Copy the token generated when you log in successfully and replace with `YOUR_JWT_TOKEN` below.
 
 #### Logout User
 
