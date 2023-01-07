@@ -137,6 +137,8 @@ curl -X POST \
 }'
 ```
 
+⚠️ Copy the token generated when you login successfully and replace with `YOUR_JWT_TOKEN` below.
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Actions
