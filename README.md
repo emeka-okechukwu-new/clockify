@@ -20,10 +20,10 @@
       </ul>
     </li>
     <li>
-      <a href="endpoints">Getting Started</a>
+      <a href="endpoints">API Enpoints</a>
       <ul>
-        <li><a href="#users">Prerequisites</a></li>
-        <li><a href="#actions">Installation</a></li>
+        <li><a href="#users">Users</a></li>
+        <li><a href="#actions">Actions</a></li>
       </ul>
     </li>
     <li><a href="#contact">Contact</a></li>
