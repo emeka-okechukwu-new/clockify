@@ -20,7 +20,7 @@
       </ul>
     </li>
     <li>
-      <a href="endpoints">API Enpoints</a>
+      <a href="#endpoints">API Enpoints</a>
       <ul>
         <li><a href="#users">Users</a></li>
         <li><a href="#actions">Actions</a></li>
