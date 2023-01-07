@@ -1,6 +1,6 @@
 <a name="readme-top"></a>
 
-# Task One: Twitter
+# Task Two: Stocks
 
 <details>
   <summary>Table of Contents</summary>
@@ -41,10 +41,9 @@ This is a simple RestAPI built with Node.js, Express, and MongoDB. It exposes en
 - [x] User registration using unique username and a password
 - [x] User login (including session maintenance using JWT)
 - [x] Only logged-in users can perform CRUD functionality
-- [x] Create tweet
-- [x] Read tweet
-- [x] Update tweet
-- [x] Delete tweet
+- [x] Users can logout
+- [x] View balance
+- [x] Add to balance
 - [ ] Unit tests with Jest for the functionality (functionality tested with cURL)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -63,7 +62,7 @@ This is a simple RestAPI built with Node.js, Express, and MongoDB. It exposes en
 1. Clone the repo inside XAMPP htdocs folder. Make sure the project folder name is `task-one`
 
 ```sh
-git clone https://github.com/emeka-okechukwu-dev/speer-technologies-assessmemt/task-one.git
+git clone https://github.com/emeka-okechukwu-dev/speer-technologies-assessmemt/task-two.git
 ```
 
 2. Install the dependencies
@@ -123,7 +122,7 @@ curl -X POST \
 
 #### Login User
 
-POST `/users/login`: API route to log in a user with a specified username and password. If the login is successful, a JSON web token is generated and returned to the client.
+`POST /users/login`: API route to log in a user with a specified username and password. If the login is successful, a JSON web token is generated and returned to the client.
 
 The parameters include:
 
@@ -144,79 +143,57 @@ curl -X POST \
 
 ⚠️ Copy the token generated when you login successfully and replace with `YOUR_JWT_TOKEN` below.
 
+#### Logout User
+
+`POST /users/logout`: Logs out the authenticated user and invalidates the current JWT.
+
+Use cURL to send a request to log out a user with the following command:
+
+```sh
+curl -X POST \
+  http://localhost:PORT_NUMBER/users/logout \
+  -H 'Authorization: Bearer YOUR_JWT_TOKEN'
+```
+
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Actions
 
-#### Create a Tweet
+#### Add Balance
 
-POST `/tweets`: Creates a new tweet with the specified content, and the authenticated user's ID.
+`POST /balance`: Adds a specified amount to the user's balance.
 
 The parameters include:
 
-- `content` (required)
+- `amount` (required): must be a number
 
-Use cURL to send a request to create a tweet with only the content field and an authorization header with the following command:
+Use cURL to send a request to add a balance with the following command:
 
 ```sh
 curl -X POST \
-  http://localhost:PORT_NUMBER/tweets \
+  http://localhost:PORT_NUMBER/balance \
   -H 'Content-Type: application/json' \
   -H 'Authorization: Bearer YOUR_JWT_TOKEN' \
   -d '{
-  "content": "This is my first tweet"
+  "amount": 50
 }'
 ```
 <br/>
 
-#### Read a Tweet
+#### Get Balance
 
-GET `/tweets`: Returns all tweets for the authenticated user.
+`GET /balance`: Gets the current balance for the authenticated user.
 
-Use cURL to send a request to get all tweets with the following command:
+Use cURL to send a request to get the balance with the following command:
+
 ```sh
 curl -X GET \
-  http://localhost:PORT_NUMBER/tweets \
+  http://localhost:PORT_NUMBER/balance \
   -H 'Authorization: Bearer YOUR_JWT_TOKEN'
 ```
 <br/>
 
-#### Update a Tweet
-
-PATCH `/tweets/:id`: Updates the tweet with the specified ID with the new content.
-
-The parameters include:
-
-- `id` (required)
-
-Use cURL to send a request to update a tweet with the following command:
-
-```sh
-curl -X PATCH \
-  http://localhost:PORT_NUMBER/tweets/TWEET_ID \
-  -H 'Content-Type: application/json' \
-  -H 'Authorization: Bearer YOUR_JWT_TOKEN' \
-  -d '{
-  "content": "Updated Content"
-}'
-```
-<br/>
-
-#### Delete a Tweet
-
-DELETE `/tweets/:id`: Deletes the tweet with the specified ID.
-
-The parameters include:
-
-- `id` (required)
-
-Use cURL to send a request to delete a tweet with the following command:
-
-```sh
-curl -X DELETE \
-  http://localhost:PORT_NUMBER/tweets/TWEET_ID \
-  -H 'Authorization: Bearer YOUR_JWT_TOKEN'
-```
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Contact
