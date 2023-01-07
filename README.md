@@ -97,7 +97,7 @@ cURL on terminal is recommended for testing these endpoints but Postman can be u
 
 #### Register User
 
-POST /users/register: API route to register a new user with a specified username and password. The password is first encrypted using the bcrypt library before being stored in the database.
+POST `/users/register`: API route to register a new user with a specified username and password. The password is first encrypted using the bcrypt library before being stored in the database.
 
 The parameters include:
 
@@ -118,7 +118,7 @@ curl -X POST \
 
 #### Login User
 
-POST /users/login: API route to log in a user with a specified username and password. If the login is successful, a JSON web token is generated and returned to the client.
+POST `/users/login`: API route to log in a user with a specified username and password. If the login is successful, a JSON web token is generated and returned to the client.
 
 The parameters include:
 
@@ -145,7 +145,7 @@ curl -X POST \
 
 #### Create a Tweet
 
-POST /tweets: Creates a new tweet with the specified content, and the authenticated user's ID.
+POST `/tweets`: Creates a new tweet with the specified content, and the authenticated user's ID.
 
 The parameters include:
 
@@ -165,7 +165,7 @@ curl -X POST \
 
 #### Read a Tweet
 
-GET /tweets: Returns all tweets for the authenticated user.
+GET `/tweets`: Returns all tweets for the authenticated user.
 
 Use cURL to send a request to get all tweets with the following command:
 ```sh
@@ -176,7 +176,7 @@ curl -X GET \
 
 #### Update a Tweet
 
-PATCH /tweets/:id: Updates the tweet with the specified ID with the new content.
+PATCH `/tweets/:id`: Updates the tweet with the specified ID with the new content.
 
 The parameters include:
 
@@ -197,7 +197,7 @@ curl -X PATCH \
 
 #### Delete a Tweet
 
-DELETE /tweets/:id: Deletes the tweet with the specified ID.
+DELETE `/tweets/:id`: Deletes the tweet with the specified ID.
 
 The parameters include:
 
