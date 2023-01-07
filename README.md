@@ -190,7 +190,6 @@ curl -X PATCH \
   -H 'Content-Type: application/json' \
   -H 'Authorization: Bearer YOUR_JWT_TOKEN' \
   -d '{
-  "title": "Updated Title",
   "content": "Updated Content"
 }'
 ```
